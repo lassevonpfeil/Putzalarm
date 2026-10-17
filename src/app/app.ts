@@ -10,6 +10,7 @@ import { MatTabGroup } from '@angular/material/tabs';
 import { MatTab } from '@angular/material/tabs';
 import { MatAccordion } from '@angular/material/expansion';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { Mainpage } from './mainpage/mainpage';
 
 
 @Component({
@@ -26,7 +27,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatTab,
     MatAccordion,
     MatExpansionModule,
-    RouterLink
+    RouterLink,
+    Mainpage
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'

@@ -6,7 +6,7 @@
 
   <span class="example-spacer"></span>
 
-  <a mat-button>Home</a>
+  <a mat-button [routerLink]="['/']">Home</a>
   <a mat-button>Products</a>
   <a mat-button>Pricing</a>
   <a mat-button>About</a>
@@ -23,167 +23,9 @@
     </button>
   </div>
 
-  <!--
-  Hero Section
-  -->
-  <section class="brand-hero">
-    <!--<div class="brand-badge">
-      <img src="icon_klein.png" alt="Putzalarm Roth" class="brand-logo" />
-    </div>-->
-
-    <div class="brand-copy">
-      <!--<p class="brand-kicker">Das ist</p>-->
-      <h1 class="brand-title">PutzAlarm <span>Roth</span></h1>
-      <p class="brand-subtitle">Sauber. Schnell. Zuverlässig.</p>
-    </div>
-  </section>
-  <!--
-  Ende Hero Section
-  -->
-
-
-
-
-  <!--
-  Grid WerSindWir
-  -->
-  <div class="feature-layout">
-    <div class="feature-item">
-      <img src="icon_klein.png" alt="Putzalarm" class="feature-image" />
-      <div class="feature-copy">
-        <h3>Saubere Räume</h3>
-        <p>Wir kümmern uns um gründliche Reinigung mit einem zuverlässigen und unkomplizierten Service.</p>
-      </div>
-    </div>
-
-    <div class="feature-item reverse">
-      <img src="icon_klein.png" alt="Putzalarm" class="feature-image" />
-      <div class="feature-copy">
-        <h3>Individuelle Lösungen</h3>
-        <p>Flexible Angebote für Zuhause, Büro oder Fahrzeuge – passend zu deinem Alltag und deinen Anforderungen.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="feature-layout">
-    <div class="feature-item">
-      <div class="team-layout">
-        <h3>Unser Team</h3>
-      </div>
-    </div>
-  </div>
-  <!--
-  Ende Grid WerSindWir
-  -->
-
-
-
-  <div class="feature-layout">
-    <div class="feature-item">
-      <div class="team-layout">
-        <h3>Services</h3>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!--
-  Tabs mit Services
-  -->
-  <mat-tab-group animationDuration="1500ms">
-    <mat-tab label="Fensterreinigung">
-      <div class="feature-layout">
-        <div class="feature-item">
-          <img src="n.jpg" alt="Putzalarm" class="feature-image" />
-          <div class="feature-copy">
-            <h3>Saubere Fenster</h3>
-            <p>Putzalarm Roth steht für professionelle Fensterreinigung im Raum Roth (+75km Umkreis). Ob Einfamilienhaus in Roth, Gewerbeimmobilie in Schwabach oder Wohnung im Landkreis Roth - wir reinigen Ihre Fenster streifenfrei und zuverlässig.</p>
-          </div>
-        </div>
-
-        <div class="feature-item reverse">
-          <img src="g.jpg" alt="Putzalarm" class="feature-image" />
-          <div class="feature-copy">
-            <h3>Verlässlicher Service</h3>
-            <p>Mit modernster Ausrüstung und umweltfreundlichen Reinigungsmitteln erzielen wir Ergebnisse, die Sie sehen. Wir arbeiten sowohl für Privatkunden als auch für Unternehmen, Hausverwaltungen und Gewerbeimmobilien - flexibel, diskret und immer pünktlich.</p>
-          </div>
-        </div>
-      </div>
-    </mat-tab>
-
-    <mat-tab label="Autoreinigung">
-
-    </mat-tab>
-  </mat-tab-group>
-  <!--
-  Ende Tabs mit Services
-  -->
-
-
-  <!--
-  Instagram Video Player
-  -->
-
-
-  <!--
-  Ende Instagram Video Player
-  -->
-
-
-
-  <!--
-  FAQ
-  -->
-  <section class="faq-section">
-    <h2>FAQ</h2>
-
-    <mat-accordion class="faq-accordion">
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Welche Leistungen bietet Putzalarm Roth an?
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Wir bieten unter anderem Fensterreinigung, Wohnungs- und Hausreinigung, Fahrzeugreinigung sowie individuelle Reinigungsleistungen für Privatkunden und Unternehmen.</p>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Wie lange dauert eine Reinigung?
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Die Dauer hängt von Größe und Zustand der Fläche ab. Bei einer normalen Wohnungsreinigung können wir dir in der Regel eine genaue Zeitangabe nach einer kurzen Einschätzung nennen.</p>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Arbeitet ihr auch im Raum außerhalb von Roth?
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Ja, wir arbeiten im Raum Roth und in einem Umkreis von etwa 75 km. Gerne senden wir dir bei Bedarf eine individuelle Einschätzung zu.</p>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Wie buche ich einen Termin?
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <p>Du kannst uns ganz einfach telefonisch oder per E-Mail kontaktieren. Wir vereinbaren mit dir einen passenden Termin und klären alle Details vorab.</p>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </section>
-  <!--
-  Ende FAQ
-  -->
-
+  <router-outlet></router-outlet>
 
 </body>
-
 
 <footer class="site-footer" style="background-color: rgb(40, 80, 120); width: 100%; height: flex;;">
   <div class="footer-grid">
@@ -199,7 +41,7 @@
 
     <div class="footer-column">
       <h3>Rechtliches</h3>
-      <p><a href="/impressum">Impressum</a><br>Datenschutz<br>AGB</p>
+      <p><a [routerLink]="['/impressum']">Impressum</a><br><a [routerLink]="['/datenschutz']">Datenschutz</a><br><a [routerLink]="['/agbs']">AGB</a></p>
     </div>
 
     <div class="footer-column">
